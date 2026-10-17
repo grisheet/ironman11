@@ -1,0 +1,12 @@
+*{box-sizing:border-box}html,body,#root{margin:0;height:100%;background:#040a14;color:#bff;font:14px system-ui,sans-serif}
+.app{position:relative;height:100%;overflow:hidden}.stage{position:absolute;inset:0}
+video{position:absolute;transform:scaleX(-1);object-fit:fill}video.off{opacity:0;width:1px;height:1px;pointer-events:none}
+video.pv{right:16px;bottom:16px;width:200px;height:150px;border:1px solid #3ff6;border-radius:8px;z-index:3}
+video.bd{inset:0;width:100%;height:100%;opacity:.3;z-index:0}
+.ov{position:absolute;right:16px;bottom:16px;width:200px;height:150px;transform:scaleX(-1);z-index:4;pointer-events:none}.ov.off{display:none}
+.stage{z-index:1}header{position:absolute;top:0;left:0;right:0;padding:14px 18px;display:flex;justify-content:space-between;z-index:5;letter-spacing:.15em;pointer-events:none}
+.st{letter-spacing:0;opacity:.8}.center{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:10px;z-index:6;text-align:center;background:#040a14aa;padding:20px}
+button{background:#0a2733;color:#bff;border:1px solid #3ff8;border-radius:6px;padding:8px 12px;cursor:pointer}button:hover:not(:disabled){background:#0e3a4a}
+button:focus-visible,input:focus-visible{outline:2px solid #fff}.big{font-size:18px;padding:14px 26px;letter-spacing:.1em}
+aside{position:absolute;left:16px;bottom:16px;display:grid;gap:6px;z-index:7;max-width:260px}aside small{opacity:.6}
+.err,.msg{color:#ff9a9a;max-width:480px}
